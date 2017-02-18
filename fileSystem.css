@@ -1,0 +1,224 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    /*font-family:"Comic Sans MS";*/
+    font-family: Arial;
+    background-color: aquamarine;}
+
+@font-face {
+    font-family: "Comic Sans MS";
+    src:local("Comic Sans MS");
+    unicode-range: U+0020-007F;
+}
+#root[data-state = collapsed]:before {
+    content: '+';
+}
+#root[data-state = expanded]:before {
+    content: '-';
+}
+
+.lifolder > ul.expanded{
+    display: none;
+
+}
+.lifolder > ul.collapsed:before {
+    content: '+';
+}
+.lifolder > ul.expanded:before {
+    content: '-';
+}
+.lifolder > ul.collapsed >ul{
+    display: block;
+
+}
+
+li.lifolder[data-state = expanded]:before {
+    content: '-';
+}
+/*li.lifolder[data-state=collapsed].parent {*/
+    /*display: none;*/
+/*}*/
+li{
+padding-left: 10px;
+    padding-right: 10px;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+color: black;
+}
+
+ul{
+
+    font-size: 1em;
+    list-style-type: none;
+}
+img{
+    width: 25px;
+    height:25px;
+}
+
+
+.browser{
+    padding-left: 20px;
+    width:40%;
+    background-color: chartreuse;
+    vertical-align: top;
+    display:flex;
+    flex-direction: row;
+
+}
+.content{
+    display: inline-block;
+    width: 100%;
+    padding:20px;
+    vertical-align: top;
+    background-color: aqua;
+}
+
+
+.fileSystem {
+    /*align-content: flex-start;*/
+    display: flex;
+    flex-flow: row;
+    overflow: scroll;
+}
+
+
+ul.rightMenu{
+    font-family:"Arial Narrow";
+    text-align: left;
+    visibility: visible;
+    font-size: 12px;
+    height:80px;
+    white-space:nowrap;
+
+}
+
+span{
+    padding-left: 10px;
+}
+
+.messageArea{
+    display: block;
+    color: orangered;
+    font-size: 1em;
+}
+
+menu {
+    position: absolute;
+    background-color: #fff;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.8);
+    display: none;
+}
+
+menu > menuitem {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 1em;
+}
+
+menu > menuitem:hover {
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+
+menu > menuitem {
+    display: none;
+}
+
+menu[data-type=folder] .folder {
+    display: block;
+}
+
+menu[data-type=randomSpot] .randomSpot {
+    display: block;
+}
+
+menu[data-type=file] .file {
+    display: block;
+}
+
+
+.textarea{
+    /*width:100%;*/
+    display: flex;
+    display:none;
+    flex-direction: row;
+}
+textarea {
+    top: 100px;
+    position: absolute;
+    left: 200px;
+    right: 500px;
+    bottom: 100px;
+    width: 500px;
+    height: 250px;
+    border: #0c20ff;
+}
+textarea:focus{
+    background-color: lavender;
+}
+
+button{
+align-self: right;
+}
+
+.back-btn {
+    background-color: aquamarine;
+    width: 50px;
+    font-weight:bold;
+    outline-width: thin;
+    outline-style: solid;
+    font-size: 1em;
+}
+.forward-btn{
+
+    background-color: aquamarine;
+    width: 50px;
+    font-weight:bold;
+    outline-width: thin;
+    outline-style: solid;
+    font-size: 1em;
+}
+.nav-bar{
+    width: 13%;
+}
+.pathHolder{
+    vertical-align: middle;
+    display: inline-block;
+    align-content: center;
+    width:85%;
+    padding-top: 10px;
+}
+.addressLine{
+width: 100%;
+}
+
+.topPart{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-left: 10px;
+
+    background-color: aquamarine;
+    outline-style: solid;
+    border-width: 5px;
+    border-color: black;
+
+
+}
+.nav-buttons{
+    width: 50px;
+    font-weight:bold;
+    font-size: 2em;
+    padding: 0px;
+}

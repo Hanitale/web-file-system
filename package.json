@@ -1,0 +1,24 @@
+{
+  "name": "web-file-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fileSystemBl.js",
+  "scripts": {
+    "start": "node_modules/.bin/http-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hanitale/web-file-system.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hanitale/web-file-system/issues"
+  },
+  "homepage": "https://github.com/Hanitale/web-file-system#readme",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "jquery": "^3.1.1"
+  }
+}

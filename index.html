@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <title>A File System</title>
+    <link rel="stylesheet" href="fileSystem.css">
+
+</head>
+<body>
+<div class="topPart">
+    <div class="nav-bar">
+        <span class="nav-buttons">
+            <button class="back-btn"><</button><button class="forward-btn">></button>
+        </span>
+    </div>
+    <div class="pathHolder"><input type="text" class="addressLine"></div>
+</div>
+<div class="fileSystem">
+    <div class="browser">
+            <ul class="folderList"></ul>
+    </div>
+ <div class="content" data-custom="randomSpot"></div>
+    <menu type="context" class="right-click-menu">
+        <menuitem data-id="rename" class="folder file rename">Rename</menuitem>
+        <menuitem data-id="createFolder" class="folder randomSpot createFolder">Create Folder</menuitem>
+        <menuitem data-id="openFile" class="file open">Open File</menuitem>
+        <menuitem data-id="createFile" class="randomSpot folder createFile">Create File</menuitem>
+        <menuitem data-id="delete" class="folder file delete">Delete</menuitem>
+    </menu>
+</div>
+
+<div class="bottomLine">
+    <span class="messageArea"></span>
+    <div class="textarea">
+         <span><textarea autofocus placeholder="Enter your text here..."></textarea></span>
+         <span><button class="saveFileContent">Save</button></span>
+         <span><button class="clearFileContent">Clear</button></span>
+    </div>
+</div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="fileSystemBl.js"></script>
+<script src="rightMenu.js"></script>
+<script src="fileSystemUi.js"></script>
+</body>
+</html>
