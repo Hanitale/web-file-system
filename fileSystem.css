@@ -1,7 +1,7 @@
 html,body{
     height: 100%;
     margin: 0;
-    /*font-family:"Comic Sans MS";*/
+    font-family:"Comic Sans MS";
     font-family: Arial;
     background-color: aquamarine;}
 
@@ -35,11 +35,10 @@ html,body{
 li.lifolder[data-state = expanded]:before {
     content: '-';
 }
-/*li.lifolder[data-state=collapsed].parent {*/
-    /*display: none;*/
-/*}*/
+
+
 li{
-padding-left: 10px;
+    padding-left: 10px;
     padding-right: 10px;
 }
 a:link{
@@ -48,7 +47,7 @@ a:link{
 }
 
 a:visited{
-color: black;
+    color: black;
 }
 
 ul{
@@ -56,11 +55,18 @@ ul{
     font-size: 1em;
     list-style-type: none;
 }
+ul.folderList{
+   padding: 0px;
+}
 img{
-    width: 25px;
-    height:25px;
+    width: 22px;
+    height:22px;
 }
 
+.small{
+    width: 15px;
+    height:15px;
+}
 
 .browser{
     padding-left: 20px;
@@ -69,6 +75,7 @@ img{
     vertical-align: top;
     display:flex;
     flex-direction: row;
+    font-size:13px;
 
 }
 .content{
@@ -163,6 +170,7 @@ textarea {
     width: 500px;
     height: 250px;
     border: #0c20ff;
+    font-family: Arial;
 }
 textarea:focus{
     background-color: lavender;

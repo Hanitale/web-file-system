@@ -15,8 +15,7 @@ function setRightClickMenuItems() {
     $('.right-click-menu > menuitem').off('click');
     $('.right-click-menu > .rename').on('click', function () {
         var id = $('.right-click-menu').data('id');
-        console.log('renaming folder '+ id);
-        renameItem(id);
+       renameItem(id);
     });
     $('.right-click-menu > .createFolder').on('click', function () {
         var id = $('.right-click-menu').data('id');
@@ -31,7 +30,7 @@ function setRightClickMenuItems() {
     $('.right-click-menu > .delete').on('click', function () {
        var id = $('.right-click-menu').data('id');
         console.log('deleting '+ id);
-      deleteItem(id);
+        deleteItem(id);
     });
 
     $('.right-click-menu > .open').on('click', function () {
